@@ -13,6 +13,12 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/daemonaman/nodejs-express-template.git'
             }
         }
+    stage ("Build the code"){
+			steps{
+				sh 'npm install'
+			}
+		}
+
         
     stage('Remove Old Containers and images') {
             steps {
