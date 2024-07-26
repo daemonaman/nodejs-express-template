@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/daemonaman/nodejs-express-template.git'
+                git branch: 'template', url: 'https://github.com/daemonaman/nodejs-express-template.git'
             }
         }
     stage ("Build the code"){
